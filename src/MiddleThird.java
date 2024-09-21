@@ -9,9 +9,9 @@ public class MiddleThird {
         int n = new Scanner(System.in).nextInt();
         if (n >= 1 && n <= 100) {
             System.out.println("Введите ряд натуральных чисел, согласно заданному количеству");
-            double[] nums = new double[n];
+            int[] nums = new int[n];
             for (int element = 0; element < n; element++) {
-                nums[element] = new Scanner(System.in).nextDouble();
+                nums[element] = new Scanner(System.in).nextInt();
 
             }
             for (int i = 1; i < nums.length; i++) {
