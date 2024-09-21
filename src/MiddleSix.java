@@ -11,8 +11,8 @@ public class MiddleSix {
     public static void main(String[] args) {
         for (int i = 0; i < 5; i++) {
             System.out.println("Генерация двух случайных чисел");
-            int a = new Random().nextInt(9);
-            int b = new Random().nextInt(9);
+            int a = new Random().nextInt(9) + 1;
+            int b = new Random().nextInt(9) + 1;
             System.out.println(a + " * " + b);
             System.out.println("Введите ответ");
             int userAnsw = new Scanner(System.in).nextInt();
