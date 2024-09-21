@@ -14,9 +14,10 @@ public class MiddleSecond {
                 massiv[element] = new Scanner(System.in).nextDouble();
             }
             double maximum = 0;
-            for (int i = 1; i < massiv.length; i++) {
-                if (massiv[i] > maximum) {
-                    maximum = massiv[i];
+            for (double i : massiv) {
+                int absValue = (int) Math.abs(i);
+                if (absValue > maximum) {
+                    maximum = absValue;
                 }
             }
             System.out.println("Максимальное значение внутри массива = " + maximum);
