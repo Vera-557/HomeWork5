@@ -10,18 +10,19 @@ public class MiddleThird {
         if (n >= 1 && n <= 100) {
             System.out.println("Введите ряд натуральных чисел, согласно заданному количеству");
             int[] nums = new int[n];
-            for (int element = 0; element < n; element++) {
-                nums[element] = new Scanner(System.in).nextInt();
+            for (int index = 0; index < n; index++) {
+                nums[index] = new Scanner(System.in).nextInt();
+                for (int element = 2; element < nums.length; element++) {
+                    if (nums[index] % element == 0) {
+                        System.out.println("Result " + element);
+                    } else System.out.println("Нет делителя");
+            }
 
             }
-            for (int i = 1; i < nums.length; i++) {
-                if (nums[i] % 2 == 1) {
-                    System.out.println("Result " + i);
-                } else System.out.println("j");
-            }
-            //Я не могу решить эту задачу
+
         } else System.out.println("Вы ввели неверное значение, код не может быть выполнен.");
 
 
     }
 }
+
